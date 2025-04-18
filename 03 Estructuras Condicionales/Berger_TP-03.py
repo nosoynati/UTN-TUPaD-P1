@@ -18,7 +18,6 @@ def notaAprobado(x: int) -> str:
 nota = int(input("Su calificación: "))
 notaAprobado(nota)
 
-
 ##3) Escribir un programa que permita ingresar solo números pares.
 # Si el usuario ingresa un número par, imprimir por en pantalla el mensaje "Ha ingresado un número par";
 # en caso contrario, imprimir por pantalla "Por favor, ingrese un número par".
@@ -51,7 +50,6 @@ def edadCategoria():
 
 edadCategoria()
 
-
 # 5) Escribir un programa que permita introducir contraseñas de entre 8 y 14 caracteres (incluyendo 8 y 14).
 # Si el usuario ingresa una contraseña de longitud adecuada, imprimir por en pantalla el mensaje
 # "Ha ingresado una contraseña correcta";
@@ -67,7 +65,6 @@ def longPassword():
         print("Por favor, ingrese una contraseña de entre 8 y 14 caracteres")
 
 longPassword()
-
 
 # escribir un programa que tome la lista numeros_aleatorios,
 # calcule su moda, su mediana y su media y las compare para determinar si hay sesgo positivo,
@@ -89,7 +86,6 @@ def determinarSesgo():
 
 determinarSesgo()
 
-
 ## 7) Escribir un programa que solicite una frase o palabra al usuario.
 # Si el string ingresado termina con vocal, añadir un signo de exclamación al final
 # e imprimir el string resultante por pantalla;
@@ -108,8 +104,6 @@ terminaEnVocal()
 # 3. Si quiere su nombre con la primera letra mayúscula. Por ejemplo: Pedro.
 # El programa debe transformar el nombre ingresado de acuerdo a la opción seleccionada por el usuario e imprimir el resultado por pantalla.
 # Nota: investigue uso de las funciones upper(), lower() y title() de Python para convertir entre mayúsculas y minúsculas.
-
-
 def formatName():
     nombre = input("Ingrese su nombre: ")
     print("Formato: \n[1]: MAYÚSCULAS\n[2]: minúsculas\n[3]: Capitales")
@@ -125,7 +119,6 @@ def formatName():
             print(nombre)
 
 formatName()
-
 
 # 9) Escribir un programa que pida al usuario la magnitud de un terremoto,
 # clasifique la magnitud en una de las siguientes categorías según la escala de Richter e imprima el resultado por pantalla:
@@ -155,7 +148,6 @@ magnitudTerremoto()
 # Escribir un programa que pregunte al usuario en cuál hemisferio se encuentra (N/S),
 # qué mes del año es y qué día es. El programa deberá utilizar esa información para
 # imprimir por pantalla si el usuario se encuentra en otoño, invierno, primavera o verano.
-
 dia = int(input("Ingrese el día: (dd): "))
 mes = input("Ingrese el mes: ").lower()
 

@@ -1,13 +1,11 @@
 import random
-from statistics import mean
+
 # 1) Crea un programa que imprima en pantalla todos los números enteros desde 0 hasta 100
 # (incluyendo ambos extremos), en orden creciente, mostrando un número por línea.
 def enterosHasta(n):
     for i in range(n + 1):
         print(i)
-
-
-# enterosHasta(100)
+enterosHasta(100)
 
 
 # 2) Desarrolla un programa que solicite al usuario un número entero y determine la cantidad
@@ -19,9 +17,7 @@ def cuantosDigitos():
         n = n // 10
         count += 1
     print(count)
-
-
-# cuantosDigitos()
+cuantosDigitos()
 
 
 # 3) Escribe un programa que sume todos los números enteros comprendidos entre dos valores
@@ -34,9 +30,7 @@ def sumaRango():
     for i in range(x, y + 1):
         acc += i
     print(f"La suma del rango entre {x} e {y} es = {acc}")
-
-
-# sumaRango()
+sumaRango()
 
 
 # 4) Elabora un programa que permita al usuario ingresar números enteros y los sume ensecuencia.
@@ -53,7 +47,7 @@ def sumaRangoInt():
             continue
         acc += n
     print(f"La suma del rango entre es = {acc}")
-# sumaRangoInt()
+sumaRangoInt()
 
 # 5) Crea un juego en el que el usuario deba adivinar un número aleatorio entre 0 y 9. Al final, el
 # programa debe mostrar cuántos intentos fueron necesarios para acertar el número.
@@ -65,7 +59,7 @@ def adivinaRandom():
         count += 1
         n = int(input("ingrese  un nro entre 0 y 9: "))
     print(f"Número: {random} | intentos: {count}")
-# adivinaRandom()
+adivinaRandom()
 
 
 # 6) Desarrolla un programa que imprima en pantalla todos los números pares comprendidos
@@ -73,17 +67,17 @@ def adivinaRandom():
 def numerosDecr():
     for i in range(100,-1,-2):
         print(i)
-# numerosDecr()
+numerosDecr()
 
 # 7) Crea un programa que calcule la suma de todos los números comprendidos entre 0 y un
 # número entero positivo indicado por el usuario.
-# numero = int(input("Ingrese un nro para el límite del rango: "))
+numero = int(input("Ingrese un nro para el límite del rango: "))
 def sumaRangoIndef(n):
     acc = 0;
     for i in range(0,n):
         acc += i
     return acc
-# print(sumaRangoIndef(numero))
+print(sumaRangoIndef(numero))
 
 # 8) Escribe un programa que permita al usuario ingresar 100 números enteros. Luego, el
 # programa debe indicar cuántos de estos números son pares, cuántos son impares, cuántos son
@@ -108,12 +102,12 @@ def cuantosEnteros(lim):
             cont_negativos += 1
         lim -= 1
         
-    print("positivos: ",cont_positivos)
-    print("negativos: ",cont_negativos)
-    print("pares: ",cont_pares)
-    print("impares: ",cont_impares)
-        
-# cuantosEnteros(11)
+    print("Positivos: ",cont_positivos)
+    print("Negativos: ",cont_negativos)
+    print("Pares: ",cont_pares)
+    print("Impares: ",cont_impares)
+cuantosEnteros(100) # cambiar parámetro
+
 # 9) Elabora un programa que permita al usuario ingresar 100 números enteros y luego calcule la
 # media de esos valores. (Nota: puedes probar el programa con una cantidad menor, pero debe
 # poder procesar 100 números cambiando solo un valor).
@@ -126,9 +120,21 @@ def calcularMedia(n):
         i -= 1
     prom=acc/n
     print(f"Total = {acc}\tCantidad de valores = {n}")
-    print(f"el promedio es = {prom}")
+    print(f"Promedio es = {prom}")
 
-calcularMedia(8) #cambiar a 100
+calcularMedia(100) #cambiar el parámetro
 
 # 10) Escribe un programa que invierta el orden de los dígitos de un número ingresado por el
 # usuario. Ejemplo: si el usuario ingresa 547, el programa debe mostrar 745.
+def digitosInversos():
+    num = int(input("Ingrese un número: "))
+    aux = num
+    final = ""
+    while aux > 0:
+        resto = aux % 10
+        final += str(resto)
+        aux = aux // 10
+        # num = num // 10
+    print(f"{num} al inverso es: {int(final)}")
+
+digitosInversos()

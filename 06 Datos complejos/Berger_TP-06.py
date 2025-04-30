@@ -5,7 +5,7 @@ def listaDeNumeros():
   lista = list(range(4,101,4))
   # lista = [x % 4 == 0 for x in range(0,101)]
   return lista
-# print(listaDeNumeros())
+print(listaDeNumeros())
 
 #2) Crear una lista con cinco elementos (colocar los elementos que más te gusten) y mostrar 
 # el penúltimo. ¡Puedes hacerlo como se muestra en los videos o bien investigar cómo funciona el indexing con números negativos!
@@ -13,7 +13,7 @@ def listaDeNumeros():
 def listaElementos():
   favs = ['Gatitos','Chocolate','Dulce de leche','Arcoiris','Kiwis']
   print(favs[-2])
-# listaElementos()
+listaElementos()
 
 #3) Crear una lista vacía, agregar tres palabras con append e imprimir la lista resultante por pantalla.
 def listaVacia():
@@ -22,7 +22,7 @@ def listaVacia():
   lista_vacia.append("Bananas")
   lista_vacia.append("Ananas")
   return lista_vacia
-# print(listaVacia())
+print(listaVacia())
 
 #4) Reemplazar el segundo y último valor de la lista “animales” con las palabras “loro” y “oso”, 
 # respectivamente. Imprimir la lista resultante por pantalla.
@@ -32,7 +32,7 @@ def reemplazoLista():
   animales[1]="loro"
   animales[-1]="oso"
   return animales
-# print(reemplazoLista())
+print(reemplazoLista())
 
 #5) Analizar el siguiente programa y explicar con tus palabras qué es lo que realiza.
 def removeMax():
@@ -41,14 +41,14 @@ def removeMax():
   ## el código anterior remuevo de la lista números el elemento de máximo valor
   # si hacemos print debería retornar todos los valores exepto el 22
   print(numeros)
-# removeMax()
+removeMax()
 
 ##6) Crear una lista con números del 10 al 30 (incluído),
 # haciendo saltos de 5 en 5 y mostrar por pantalla los dos primeros.
 def range30():
   lista_numeros = list(range(10,31,5))
   return lista_numeros
-# print(range30())
+print(range30())
 
 #7) Reemplazar los dos valores centrales (índices 1 y 2) 
 # de la lista “autos” por dos nuevos valores cualesquiera.
@@ -58,7 +58,7 @@ def reemplazoElementos():
   autos[1]="wolksvagen"
   autos[2]="fiat"
   return autos
-# print(reemplazoElementos())
+print(reemplazoElementos())
 
 #8) Crear una lista vacía llamada "dobles" y agregar 
 # el doble de 5, 10 y 15 usando append directamente. 
@@ -67,7 +67,7 @@ def dobles():
   dobles = []
   dobles.append([x*2 for x in range (5,16,5)])
   return dobles
-# print(dobles())
+print(dobles())
 
 #9) Dada la lista “compras”, cuyos elementos representan 
 # los productos comprados por diferentes clientes:
@@ -91,3 +91,8 @@ print(listaAnidada())
 # Posición lista_anidada[2][1]: 57.9
 # Posición lista_anidada[2][2]: 30.6
 # Posición lista_anidada[3]: False
+def listaAnidadaB():
+  lista_anidada = [15,True,[25.5,57.9,30.6],False]
+  return lista_anidada
+
+print(listaAnidadaB())
